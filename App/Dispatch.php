@@ -28,7 +28,7 @@ class Dispatch extends Route
 	{
 		if (method_exists($this->object, $this->get_url()[1]))
 		{
-			$this->set_method("${$this->get_url()[1]}");
+			$this->set_method("{$this->get_url()[1]}");
 			self::add_parameters();
 		}
 	}
